@@ -16,4 +16,20 @@ body {
   padding: 0;
   font-family: var(--font-body);
   line-height: 1;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/countdown_bkgd_1920x1080-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

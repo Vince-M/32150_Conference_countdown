@@ -1,15 +1,31 @@
 @use '../util' as *;
 
-.card {
-  padding: rem(20);
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.toggle {
+.cards {
+  display: flex;
+}
 
-  &__button {
-    width: rem(16);
-    height: rem(16);
-    border-radius: 50%;
-    background-color: var( --nwcBlue);
-  }
+.day,
+.hour,
+.minute,
+.second {
+  color: var( --nwcGreen);
+  padding: 0 rem(48);
+  margin-bottom: rem(18)
+}
+
+.container-day h3,
+.container-hour h3,
+.container-minute h3,
+.container-second h3 {
+  color: var( --nwcGreen);
+  padding: 0 rem(48);
+  margin-bottom: rem(18)
 }

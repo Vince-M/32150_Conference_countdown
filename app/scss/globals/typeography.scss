@@ -11,3 +11,16 @@ a:visited,
 a:active {
   text-decoration: none;
 }
+
+
+h2 {
+  font-size: rem(48);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: rem(24);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
