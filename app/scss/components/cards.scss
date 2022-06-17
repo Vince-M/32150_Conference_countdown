@@ -10,22 +10,36 @@
 
 .cards {
   display: flex;
-}
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-.day,
-.hour,
-.minute,
-.second {
-  color: var( --nwcGreen);
-  padding: 0 rem(48);
-  margin-bottom: rem(18)
-}
+  @include breakpoint-down(small) {
+    flex-wrap: wrap;
+  }
 
-.container-day h3,
-.container-hour h3,
-.container-minute h3,
-.container-second h3 {
-  color: var( --nwcGreen);
-  padding: 0 rem(48);
-  margin-bottom: rem(18)
+  &__container {
+    margin-bottom: rem(20);
+    color: var( --nwcGreen);
+
+    @include breakpoint-down(small) {
+      width: 50%;
+    }
+
+    &--day h2,
+    &--hour h2,
+    &--minute h2,
+    &--second h2 {
+      padding: 0 rem(56);
+      margin-bottom: 0;
+    }
+
+    &--day h3,
+    &--hour h3,
+    &--minute h3,
+    &--second h3  {
+      padding: 0 rem(48);
+      margin-bottom: rem(18)
+    }
+  }
 }
