@@ -1,8 +1,8 @@
-console.log('hello');
+console.log("hello");
 
 const countdown = () => {
   // Specify the date and time we are counting down to.
-  const countDate = new Date("Sept 22, 2022 12:00:00").getTime();
+  const countDate = new Date("Sept 17, 2022 8:00:00").getTime();
   const now = new Date().getTime();
 
   // calculate remaining time
@@ -25,7 +25,7 @@ const countdown = () => {
   document.querySelector(".hour").innerText = textHour > 0 ? textHour : 0;
   document.querySelector(".minute").innerText = textMinute > 0 ? textMinute : 0;
   document.querySelector(".second").innerText = textSecond > 0 ? textSecond : 0;
-}
+};
 
 // run the countdown every 500ms to display the time.
 setInterval(countdown, 500);
